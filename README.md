@@ -1,6 +1,3 @@
-Perfecto, aquí te dejo un README completo basado en tu proyecto, listo para copiar y pegar. Después podés ajustar textos o links según necesites.
-
-````markdown
 # Sistema de Gestión de Empleados
 
 ## Descripción
@@ -27,8 +24,8 @@ Está pensado para ser usado en áreas de Recursos Humanos o Administración, fa
    ```bash
    git clone https://github.com/LuciosB00/ProyectoSpringboot.git
    cd ProyectoSpringboot
-````
-
+   ```
+   
 2. Construir y ejecutar la aplicación con Maven:
 
    ```bash
@@ -74,7 +71,7 @@ Está pensado para ser usado en áreas de Recursos Humanos o Administración, fa
 ## Documentación adicional
 
 * Presentación con detalles funcionales y técnicos:
-  [Link a la presentación](#) *(Agregar link si está disponible)*
+[Agregar presentacion]
 
 * Tablero de tareas (Trello):
   [https://trello.com/invite/b/6808145cf643b4cf6ed93b68/ATTId0e091397202deea29eaefc59ad59e1046ED3637/metodologia-lucio](https://trello.com/invite/b/6808145cf643b4cf6ed93b68/ATTId0e091397202deea29eaefc59ad59e1046ED3637/metodologia-lucio)
@@ -82,20 +79,8 @@ Está pensado para ser usado en áreas de Recursos Humanos o Administración, fa
 * Repositorio GitHub:
   [https://github.com/LuciosB00/ProyectoSpringboot.git](https://github.com/LuciosB00/ProyectoSpringboot.git)
 
-## Contribuciones
-
-Las contribuciones son bienvenidas.
-Por favor, abrir issues o pull requests para mejoras o correcciones.
-
-## Licencia
-
-Este proyecto está bajo licencia MIT. *(O la que decidas usar)*
-
 ---
 
 **¡Gracias por usar el Sistema de Gestión de Empleados!**
 
-```
-
-Si querés, puedo ayudarte a generar el archivo `README.md` listo para subir al repo. ¿Te gustaría?
 ```
