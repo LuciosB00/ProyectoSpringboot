@@ -1,3 +1,6 @@
+Perfecto, aquí te dejo un README completo basado en tu proyecto, listo para copiar y pegar. Después podés ajustar textos o links según necesites.
+
+````markdown
 # Sistema de Gestión de Empleados
 
 ## Descripción
@@ -24,3 +27,75 @@ Está pensado para ser usado en áreas de Recursos Humanos o Administración, fa
    ```bash
    git clone https://github.com/LuciosB00/ProyectoSpringboot.git
    cd ProyectoSpringboot
+````
+
+2. Construir y ejecutar la aplicación con Maven:
+
+   ```bash
+   ./mvnw clean install
+   ./mvnw spring-boot:run
+   ```
+
+   Alternativamente, abrir el proyecto en tu IDE y ejecutar la clase principal `DemoApplication` o equivalente.
+
+3. La aplicación correrá en `http://localhost:8080`
+
+## Uso
+
+* Acceder a la documentación y prueba de la API con Swagger UI:
+  `http://localhost:8080/swagger-ui.html`
+
+* Endpoints principales:
+
+  * `GET /api/empleados` - Listar todos los empleados
+  * `GET /api/empleados/{id}` - Obtener empleado por ID
+  * `POST /api/empleados` - Crear un nuevo empleado
+  * `PUT /api/empleados/{id}` - Actualizar empleado
+  * `DELETE /api/empleados/{id}` - Dar de baja (actualiza fechaEgreso)
+
+## Base de datos
+
+* La aplicación usa H2, una base de datos en memoria.
+
+* Acceso a consola web para consultas y pruebas:
+  `http://localhost:8080/h2-console`
+
+  * JDBC URL: `jdbc:h2:mem:testdb`
+  * Usuario: `sa`
+  * Contraseña: (dejar vacío)
+
+* Consultas útiles:
+
+  ```sql
+  SELECT * FROM empleado;
+  SELECT * FROM empleado WHERE activo = true;
+  ```
+
+## Documentación adicional
+
+* Presentación con detalles funcionales y técnicos:
+  [Link a la presentación](#) *(Agregar link si está disponible)*
+
+* Tablero de tareas (Trello):
+  [https://trello.com/invite/b/6808145cf643b4cf6ed93b68/ATTId0e091397202deea29eaefc59ad59e1046ED3637/metodologia-lucio](https://trello.com/invite/b/6808145cf643b4cf6ed93b68/ATTId0e091397202deea29eaefc59ad59e1046ED3637/metodologia-lucio)
+
+* Repositorio GitHub:
+  [https://github.com/LuciosB00/ProyectoSpringboot.git](https://github.com/LuciosB00/ProyectoSpringboot.git)
+
+## Contribuciones
+
+Las contribuciones son bienvenidas.
+Por favor, abrir issues o pull requests para mejoras o correcciones.
+
+## Licencia
+
+Este proyecto está bajo licencia MIT. *(O la que decidas usar)*
+
+---
+
+**¡Gracias por usar el Sistema de Gestión de Empleados!**
+
+```
+
+Si querés, puedo ayudarte a generar el archivo `README.md` listo para subir al repo. ¿Te gustaría?
+```
