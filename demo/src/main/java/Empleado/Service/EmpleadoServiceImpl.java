@@ -3,6 +3,8 @@ package Empleado.Service;
 import Empleado.Repository.EmpleadoRepository;
 import org.springframework.stereotype.Service;
 import Empleado.Model.Empleado;
+
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -33,6 +35,14 @@ public class EmpleadoServiceImpl implements EmpleadoService {
     @Override
     public void delete(Long id) {
         empleadoRepository.deleteById(id);
+    }
+
+    public void bajaLogica(Long id) {
+        empleadoRepository.findById(id).ifPresent(empleado -> {
+            empleado.setActivo(false);
+            empleado.setFechaEgreso(LocalDate.now());
+            empleadoRepository.save(empleado);
+        });
     }
 }
 

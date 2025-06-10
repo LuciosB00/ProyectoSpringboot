@@ -8,7 +8,7 @@ public interface EmpleadoService {
     List<Empleado> getAll();
     Optional<Empleado> getById(Long id);
     Empleado save(Empleado empleado);
-    void delete(Long id);
+    void bajaLogica(Long id);
 }
 
 
