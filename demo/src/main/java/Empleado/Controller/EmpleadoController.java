@@ -60,7 +60,7 @@ public class EmpleadoController {
     }
 
     @DeleteMapping("/{id}")
-    @Operation(summary = "Dar de baja un empleado (eliminación lógica)")
+    @Operation(summary = "Dar de baja un empleado")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         Optional<Empleado> empleadoOpt = empleadoService.getById(id);
         if (empleadoOpt.isPresent()) {
