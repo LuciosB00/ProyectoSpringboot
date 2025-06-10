@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "53f47f8d-39b5-45e8-8e5b-bcb66f46ecbf",
+		"name": "Empleado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43335733"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/empleado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/empleado/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleado",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dni\": 46575633,\r\n  \"nombre\": \"Lucio\",\r\n  \"apellido\": \"Basualdo\",\r\n  \"telefono\": \"540625\",\r\n  \"provincia\": \"Santa Fe\",\r\n  \"localidad\": \"Ceres\",\r\n  \"genero\": \"M\",\r\n  \"legajo\": 101,\r\n  \"cargo\": \"Programador\",\r\n  \"salario\": 50000,\r\n  \"activo\": true,\r\n  \"fechaIngreso\": \"2025-06-09\",\r\n  \"fechaEgreso\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/empleado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"dni\": 12345678,\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"telefono\": \"1122334455\",\r\n  \"provincia\": \"Buenos Aires\",\r\n  \"localidad\": \"La Plata\",\r\n  \"genero\": \"Masculino\",\r\n  \"legajo\": 1001,\r\n  \"cargo\": \"Analista\",\r\n  \"salario\": 75000.0,\r\n  \"activo\": true,\r\n  \"fechaIngreso\": \"2023-01-10\",\r\n  \"fechaEgreso\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/empleado/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleado",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/empleado/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleado",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
