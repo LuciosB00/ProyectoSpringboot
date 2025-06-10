@@ -80,5 +80,4 @@ Está pensado para ser usado en áreas de Recursos Humanos o Administración, fa
   [https://github.com/LuciosB00/ProyectoSpringboot.git](https://github.com/LuciosB00/ProyectoSpringboot.git)
 
 
-# **¡Gracias por usar el Sistema de Gestión de Empleados!**
-
+## **¡Gracias por usar el Sistema de Gestión de Empleados!**
