@@ -20,10 +20,8 @@ public class EmpleadoDto {
     private LocalDate fechaIngreso;
     private LocalDate fechaEgreso;
 
-    // Constructor vacío (necesario para JSON)
     public EmpleadoDto() {}
 
-    // Constructor con parámetros (opcional)
     public EmpleadoDto(Long id, Long dni, String nombre, String apellido, String telefono, String provincia,
                        String localidad, String genero, int legajo, String cargo, double salario, boolean activo,
                        LocalDate fechaIngreso, LocalDate fechaEgreso) {
@@ -43,7 +41,6 @@ public class EmpleadoDto {
         this.fechaEgreso = fechaEgreso;
     }
 
-    // Getters y setters para todos los campos
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
@@ -103,6 +100,4 @@ public class EmpleadoDto {
         emp.setFechaEgreso(dto.getFechaEgreso());
         return emp;
     }
-
-
 }

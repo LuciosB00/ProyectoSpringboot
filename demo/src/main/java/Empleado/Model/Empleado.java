@@ -38,7 +38,6 @@ public class Empleado {
     private LocalDate fechaIngreso;
     private LocalDate fechaEgreso;
 
-    // Getters y setters para todos los campos
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
@@ -84,7 +83,7 @@ public class Empleado {
     private Empleado convertirDtoAEntidad(EmpleadoDto dto) {
         Empleado empleado = new Empleado();
 
-        empleado.setId(dto.getId()); // generalmente null para POST, pero útil para PUT
+        empleado.setId(dto.getId());
         empleado.setDni(dto.getDni());
         empleado.setNombre(dto.getNombre());
         empleado.setApellido(dto.getApellido());
