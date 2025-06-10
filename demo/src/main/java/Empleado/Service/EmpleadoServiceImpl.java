@@ -33,10 +33,6 @@ public class EmpleadoServiceImpl implements EmpleadoService {
     }
 
     @Override
-    public void delete(Long id) {
-        empleadoRepository.deleteById(id);
-    }
-
     public void bajaLogica(Long id) {
         empleadoRepository.findById(id).ifPresent(empleado -> {
             empleado.setActivo(false);
